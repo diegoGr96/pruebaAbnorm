@@ -1,0 +1,137 @@
+:root{
+    --white: #fff;
+    --green: #2fa33f;
+    --brown: #917758;
+    --gray: #999;
+    --red-heart: #f26060;
+    --black-hover: #212121;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.title{
+    transition: all 200ms;
+}
+
+.title:hover{
+    color: var(--gray);
+}
+
+.heart{
+    color: var(--red-heart);
+    font-size: 30px;
+}
+
+.chat-container{
+    margin: 0 auto 80px auto;
+    max-width: 1170px;
+    width: 95%;
+}
+
+.chat-container *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-container__form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;  
+    width: 95%;
+}
+
+.form__input-container{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.form__input-container > label{
+    color: var(--white);
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+
+.form__input-container > input,
+.form__input-container > textarea{
+    border: none;
+    font-size: 16px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.form__input-container > textarea{
+    resize: vertical;
+}
+
+.form__input-submit > input{
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.form__input-submit > input:hover{
+    background-color: var(--black-hover);
+    border: 3px solid var(--brown);
+}
+
+.messages-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;  
+    width: 95%;
+    word-wrap: break-word;
+}
+
+.messages-container__title{
+    margin-bottom: 20px;
+}
+
+.messages-container__list{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.list__message{
+    background-color: var(--white);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.list__message * {
+    padding: 5px;
+}
+
+.message__name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.message__content,
+.message__date,
+.message__like{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.message__content{
+    font-size: 18px;
+}
+
+.message__date{
+    text-align: right;
+}
+
+.message__like{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
